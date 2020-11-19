@@ -1,7 +1,7 @@
 # Extend billing period
 
 [This example](./run.sh) extends a billing period by an arbitrary number of
-days by putting the subscription into a trialing state.
+days by putting a subscription into a trialing state.
 
 To do this, it updates a Subscription with `trial_end` set to the desired
 end date and passes `proration_behavior=none`.  This stops the current period
