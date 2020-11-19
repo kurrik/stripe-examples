@@ -46,9 +46,10 @@ Updated Subscription with ID to trial end of 2020-12-28 17:02:07
 
 Interesting files:
 
-| [./01-initial-subscription-invoice.pdf] | PDF of the first invoice issued when the subscription is created. |
-| [./01-initial-subscription.json] | JSON response from the subscription creation call. |
-| [./02-updated-subscription-invoice.pdf] | PDF of the second invoice issued when the update call completes. |
-| [./02-updated-subscription.json] | JSON response from the subscription update call. |
-| [./03-upcoming-invoice.json] | JSON response from calling the upcoming invoice endpoint after the update is made. |
-
+| File                                                                         | Description                                                                        |
+|------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [01-initial-subscription-invoice.pdf](./01-initial-subscription-invoice.pdf) | PDF of the first invoice issued when the subscription is created.                  |
+| [01-initial-subscription.json](./01-initial-subscription.json)               | JSON response from the subscription creation call.                                 |
+| [02-updated-subscription-invoice.pdf](./02-updated-subscription-invoice.pdf) | PDF of the second invoice issued when the update call completes.                   |
+| [02-updated-subscription.json](./02-updated-subscription.json)               | JSON response from the subscription update call.                                   |
+| [03-upcoming-invoice.json](./03-upcoming-invoice.json)                       | JSON response from calling the upcoming invoice endpoint after the update is made. |
