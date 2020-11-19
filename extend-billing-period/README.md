@@ -10,11 +10,19 @@ period until the desired end date.  When the trial finishes, the subscription
 will bill as normal (in this example, monthly for $9.99 USD) using the trial
 end date as the new subscription anchor date.
 
+In curl, the most significant part of this is the following call:
+```
+curl --silent https://api.stripe.com/v1/subscriptions/${SUB_ID} \
+  -u ${STRIPE_TEST_KEY}: \
+  -d trial_end=${ADJUSTED_END_DATE_UNIX} \
+  -d proration_behavior=none
+```
+
 A side effect of this approach is that the subscription will have a `status`
 of `trialing` until the extended period is over.
 
 **Warning**: If this is run multiple times on the same subscription, or if
-applied to an existing trialing subcsription, `trial_start` will not be
+applied to an existing trialing subscription, `trial_start` will not be
 updated.  You will need to keep track of actual trialing time ranges if it's
 important to understand granular trialing periods.
 
