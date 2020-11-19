@@ -10,7 +10,7 @@ period until the desired end date.  When the trial finishes, the subscription
 will bill as normal (in this example, monthly for $9.99 USD) using the trial
 end date as the new subscription anchor date.
 
-In curl, the most significant part of this is the following call:
+In the example, the most significant part of this is the following call:
 ```
 curl --silent https://api.stripe.com/v1/subscriptions/${SUB_ID} \
   -u ${STRIPE_TEST_KEY}: \
